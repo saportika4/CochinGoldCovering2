@@ -2358,6 +2358,9 @@ textarea {
 
 /* FOOTER */
 .footer {
+  margin-left: 120px; 
+  max-width: calc(100% - 120px); /* Prevents overflow */
+    overflow: hidden; /* Prevents scrolling within the main content */
   width: 100%;
   position: fixed;
   left: 0;
@@ -2392,7 +2395,7 @@ textarea {
   margin-bottom: 20px;
 }
 .footer h2 {
-  font-size: 4vw;
+  font-size: 2vw;
   font-weight: 300;
   line-height: 1.3;
   margin-bottom: 50px;
@@ -2412,7 +2415,7 @@ textarea {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 10px;
   padding: 50px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 13px;
@@ -2783,7 +2786,7 @@ textarea {
   }
 
   .footer h2 {
-    font-size: 7vw;
+    font-size: 4vw;
   }
 
   .footer h2 br {
@@ -2905,3 +2908,76 @@ textarea {
 
 
 /*# sourceMappingURL=style.css.map */
+
+.left-side {
+  width: 120px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 0;
+  opacity: 1;
+  background-color: #000; /* Adjust this based on your design */
+  transition: all 0.3s ease;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.logo img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.hamburger {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.equalizer span {
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  margin: 2px;
+  background-color: #fff;
+  animation: equalize 1s infinite;
+}
+
+@keyframes equalize {
+  0%, 100% {
+      height: 10px;
+  }
+  50% {
+      height: 20px;
+  }
+}
+
+main {
+  margin-left: 120px;
+  max-width: calc(100% - 120px); /* Prevents overflow */
+    overflow: hidden; /* Prevents scrolling within the main content */
+}
