@@ -2983,6 +2983,11 @@ main {
     overflow: hidden; /* Prevents scrolling within the main content */
 }
 
+.page-header .video-bg img{
+  height: 100%;
+  object-fit: cover;
+}
+
 @media(max-width: 767px) {
   main {
     margin-left: 0px !important;
