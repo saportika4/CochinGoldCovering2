@@ -391,7 +391,7 @@ textarea {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 11;
+  z-index: 1000;
   background: #f3c125;
   text-align: center;
   -webkit-transition: all 0.3s ease;
@@ -540,7 +540,7 @@ textarea {
   position: fixed;
   right: -100%;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s ease;
@@ -920,7 +920,7 @@ textarea {
   font-family: "Fjalla One", sans-serif;
   color: #fff;
   text-align: center;
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   margin: auto;
   cursor: pointer;
 }
@@ -2374,7 +2374,11 @@ textarea {
   background-size: 80% auto;
 }
 .footer ul {
-  margin: 0;
+  /* margin: 50px; */
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding-left: 50px;
+  margin-right: 50px;
   padding: 0;
   float: right;
 }
@@ -2387,7 +2391,8 @@ textarea {
   font-size: 13px;
 }
 .footer ul li a:hover {
-  color: #75dab4;
+  /* color: #75dab4; */
+  color: #f3c125;
 }
 .footer h6 {
   font-family: "Fjalla One", sans-serif;
@@ -2917,7 +2922,7 @@ textarea {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 300;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px 0;
   opacity: 1;
@@ -3040,5 +3045,12 @@ main {
   .intro-image figure img{
     min-height: 350px;
     max-height: 350px;
+  }
+
+  .footer ul {
+    margin-bottom: 30px !important;
+    margin-top: 0px !important;
+    padding-left: 0px !important;
+    margin-right: 0px !important;
   }
 }
