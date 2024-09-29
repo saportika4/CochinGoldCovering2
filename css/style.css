@@ -540,7 +540,7 @@ textarea {
   position: fixed;
   right: -100%;
   top: 0;
-  z-index: 9;
+  z-index: 10;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s ease;
@@ -3023,5 +3023,22 @@ main {
     margin-top: 99px;
     height: 100%;
     object-fit: cover;
+  }
+
+  .page-header .inner{
+    padding-left: 30px;
+  }
+
+  .site-navigation{
+    padding-left: 70px !important;
+  }
+
+  .carousel-hero .slide-progress{
+    margin-left: -185px !important;
+  }
+
+  .intro-image figure img{
+    min-height: 350px;
+    max-height: 350px;
   }
 }
