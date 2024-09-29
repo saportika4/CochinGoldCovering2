@@ -3013,4 +3013,10 @@ main {
     margin-top: -86px;
     /* margin-bottom: -35px; */
   }
+  
+  .page-header .video-bg img{
+    margin-top: 99px;
+    height: 100%;
+    object-fit: cover;
+  }
 }
