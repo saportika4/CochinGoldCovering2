@@ -3038,9 +3038,9 @@ main {
     padding-left: 70px !important;
   }
 
-  .carousel-hero .slide-progress{
+  /* .carousel-hero .slide-progress{
     margin-left: -185px !important;
-  }
+  } */
 
   .intro-image figure img{
     min-height: 350px;
@@ -3052,5 +3052,14 @@ main {
     margin-top: 0px !important;
     padding-left: 0px !important;
     margin-right: 0px !important;
+  }
+
+  .slide-progress {
+    display: none !important;
+  }
+
+  .header-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
   }
 }
