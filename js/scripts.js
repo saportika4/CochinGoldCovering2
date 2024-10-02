@@ -237,7 +237,7 @@
   var mainslider = new Swiper('.gallery-top', {
     spaceBetween: 0,
     autoplay: {
-      delay: 2500,
+      delay: 5500,
       disableOnInteraction: false,
     },
     navigation: {
@@ -308,7 +308,7 @@
     slidesPerView: 3,
     centeredSlides: true,
     autoplay: {
-      delay: 2500,
+      delay: 5500,
       disableOnInteraction: false,
     },
     navigation: {
