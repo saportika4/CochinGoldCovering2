@@ -957,7 +957,7 @@ textarea {
 .slider .swiper-container .swiper-slide {
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .slider .swiper-container .swiper-slide video {
   min-width: 100%;
@@ -989,7 +989,7 @@ textarea {
 .slider .gallery-thumbs .swiper-slide {
   width: 90%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 0;
   text-align: center;
   filter: blur(3px);
 }
@@ -1166,7 +1166,7 @@ textarea {
 .carousel-hero .carousel-slider .swiper-slide {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: end;
   margin: 0;
   background-size: cover;
   background-position: center;
@@ -1208,10 +1208,10 @@ textarea {
 .carousel-hero .carousel-slider .swiper-slide .inner h2 {
   width: 100%;
   float: left;
-  font-size: 4vw;
+  font-size: 28px;
   line-height: 5vw;
   font-weight: 800;
-  color: #fff;
+  /* color: #fff; */
   margin-bottom: 10px;
 }
 .carousel-hero .carousel-slider .swiper-slide .inner a {
@@ -1325,13 +1325,19 @@ textarea {
 .page-header .inner h1 {
   color: #fff;
   font-weight: 800;
-  font-size: 10vw;
+  font-size: 5vw;
   letter-spacing: -3px;
+}
+
+@media screen and (max-width: 796px) {
+  .page-header .inner h1 {
+    font-size: 10vw;
+  }
 }
 .page-header .inner p {
   margin: 0;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: -0.5px;
 }
@@ -1559,7 +1565,8 @@ textarea {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
-  padding-right: 20%;
+  text-align: justify;
+  /* padding-right: 20%; */
   margin-bottom: 70px;
 }
 .text-content-block small {
@@ -1574,7 +1581,7 @@ textarea {
   font-family: "Fjalla One", sans-serif;
 }
 .text-content-block p {
-  padding-right: 20%;
+  /* padding-right: 20%; */
   margin-bottom: 0;
   line-height: 1.5;
 }
@@ -2473,7 +2480,7 @@ textarea {
 
   .slider .gallery-thumbs .swiper-slide-active span {
     width: 100%;
-    font-size: 8vw;
+    font-size: 5vw;
     line-height: 11vw;
   }
 
@@ -2617,7 +2624,7 @@ textarea {
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .section-title {
-    font-size: 9vw;
+    font-size: 6vw;
     margin-bottom: 40px;
   }
 
@@ -3061,5 +3068,87 @@ main {
   .header-hidden {
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
+  }
+}
+
+.gold-line {
+  border-top: 2px solid gold;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.swiper-slide span {
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #DAA520; /* Gold color */
+  text-align: center;
+}
+.swiper-slide a {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #B8860B; /* Lighter gold color */
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+.swiper-slide a:hover {
+  color: #FFD700; /* Bright gold on hover */
+}
+
+.inner {
+  padding-bottom: 50px;
+}
+
+.blush-text {
+  color: #FAD0C9 !important;
+}
+
+.aurum-text {
+  color: #FFD700 !important;
+}
+
+.rose-text {
+  color: #F1A7B4 !important; 
+}
+
+.sapphire-text {
+  color: #417fdc !important;
+}
+
+.emerald-text {
+  color: #63e88f !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .inner h2 {
+    font-size: 24px !important;
+    padding-bottom: 40px;  /* Adjust the font size for mobile */
+  }
+
+  .blush-text h2 {
+    font-size: 24px !important;
+    padding-bottom: 40px;  /* Optional: you can fine-tune each color class separately */
+  }
+
+  .aurum-text h2 {
+    font-size: 24px !important;
+    padding-bottom: 40px;
+  }
+
+  .rose-text h2 {
+    font-size: 24px !important;
+    padding-bottom: 40px;
+  }
+
+  .sapphire-text h2 {
+    font-size: 24px !important;
+    padding-bottom: 40px;
+  }
+
+  .emerald-text h2 {
+    font-size: 24px !important;
+    padding-bottom: 40px;
   }
 }
